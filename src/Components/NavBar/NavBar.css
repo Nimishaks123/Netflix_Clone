@@ -1,0 +1,51 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Increased height to accommodate all elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #111;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensures padding does not add to overall height */
+    overflow: hidden; /* Prevents content from spilling out */
+}
+
+/* Netflix logo */
+.logo {
+    width: 80px;
+}
+
+/* Right side container (Avatar and Login button) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between avatar and login button */
+}
+
+/* Avatar styling */
+.avatar {
+    width: 30px;
+    height: 30px; /* Ensure consistent size */
+    border-radius: 50%; /* Optional: make the avatar circular */
+}
+
+/* Login button styling */
+.login-button {
+    padding: 10px 20px; /* Adjusted for better visibility */
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #f40612; /* Slightly lighter red for hover effect */
+}
